@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .starbucksPromotion */
+.starbucksPromotion {
+    .innerBox {
+        .Promotion_title1 {
+            font-weight: 500;
+            font-size: 1.5em;
+            color: #333;
+            padding: 50px 0 10px;
+        }
+        .Promotion_title2 {
+            font-weight: 400;
+            font-size: 1.25em;
+            color: #333;
+            padding-bottom: 50px;
+        }
+        .Promotion_title1, .Promotion_title2 {
+            @include respond($mobile767) {
+                text-align: center;
+            }
+        }
+        .starbucksPromotion_banner {
+            text-align: center;
+            .slick-slide {
+                padding: 15px;
+            }
+            .slick-center {
+                transform: scale(1.1);
+            }
+            >div {
+                padding: 1%;
+                overflow: hidden;
+                @include respond($mobile767) {
+                }
+                img {
+                    transition: .5s;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+                p {
+                    transition: .5s;
+                    &:hover>a {
+                        text-decoration: underline;
+                        opacity: .7;
+                    }
+                }
+                .Promotion_text1 {
+                    margin: 10px 0;
+                    a {
+                        font-size: 1.3em;
+                        font-weight: 500;
+                    }
+                }
+                .Promotion_text2 {
+                    margin-bottom: 15px;
+                    a {
+                        font-size: 1.1em;
+                    }
+                }
+                .more {
+                    width: 30%;
+                    margin: 0 auto;
+                    border-radius: 5px;
+                    background-color: $링크서브;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    a {
+                        font-size: 1.1em;
+                        font-weight: 400;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="starbucksPromotion">
+        <h2 class="blind">스타벅스 이벤트</h2>
+        <div class="innerBox">
+            <p class="Promotion_title1">STARBUCKS EVENT</p>
+            <p class="Promotion_title2">이번달의 특별한 이벤트를 만나 보세요.</p>
+            <div class="starbucksPromotion_banner">
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_1.jpg" alt="eventBox_book_second_WEB_THUM_1">
+                    <p class="Promotion_text1"><a href="#void">만원당 별 적립 이벤트</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-01-01 ~ 2022-12-31</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_2.jpg" alt="eventBox_book_second_WEB_THUM_2">
+                    <p class="Promotion_text1"><a href="#void">대한항공 Buckle-Up 카드의 스페셜한 이벤트</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-02-24 ~ 2022-04-30</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_3.jpg" alt="eventBox_book_second_WEB_THUM_3">
+                    <p class="Promotion_text1"><a href="#void">스타벅스 현대카드 3월 한정 혜택</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-03-01 ~ 2022-03-31</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_4.jpg" alt="eventBox_book_second_WEB_THUM_4">
+                    <p class="Promotion_text1"><a href="#void">3월 e-Gift Item 보너스 스타</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-03-01 ~ 2022-03-31</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_5.jpg" alt="eventBox_book_second_WEB_THUM_5">
+                    <p class="Promotion_text1"><a href="#void">스프링 Phase 2 음료 Tri-Star Dash</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-03-22 ~ 2022-04-04</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_6.jpg" alt="eventBox_book_second_WEB_THUM_1">
+                    <p class="Promotion_text1"><a href="#void">만원당 별 적립 이벤트</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-01-01 ~ 2022-12-31</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_7.jpg" alt="eventBox_book_second_WEB_THUM_2">
+                    <p class="Promotion_text1"><a href="#void">대한항공 Buckle-Up 카드의 스페셜한 이벤트</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-02-24 ~ 2022-04-30</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_8.jpg" alt="eventBox_book_second_WEB_THUM_3">
+                    <p class="Promotion_text1"><a href="#void">스타벅스 현대카드 3월 한정 혜택</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-03-01 ~ 2022-03-31</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_9.jpg" alt="eventBox_book_second_WEB_THUM_4">
+                    <p class="Promotion_text1"><a href="#void">3월 e-Gift Item 보너스 스타</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-03-01 ~ 2022-03-31</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+                <div>
+                    <img src="img/eventBox_book_second_WEB_THUM_10.jpg" alt="eventBox_book_second_WEB_THUM_5">
+                    <p class="Promotion_text1"><a href="#void">스프링 Phase 2 음료 Tri-Star Dash</a></p>
+                    <p class="Promotion_text2"><a href="#void">2022-03-22 ~ 2022-04-04</a></p>
+                    <p class="more"><a href="#void">자세히 보기</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
