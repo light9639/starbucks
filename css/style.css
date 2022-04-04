@@ -67,12 +67,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.75em 1em;
+  padding: 1em 1em 0.75em 1em;
 }
 .app .sidebar div i {
   position: relative;
-  left: 72%;
+  left: 70%;
   cursor: pointer;
+  font-size: 1.25em;
+  margin-top: -0.2em;
 }
 .app .sidebar div i:hover {
   opacity: 0.5;
@@ -133,7 +135,7 @@
   padding-right: 0.5em;
   width: 9em;
   display: inline;
-  vertical-align: middle;
+  vertical-align: -3px;
 }
 .app .sidebar .sidebar-nav ul li .nav-flyout {
   position: absolute;
@@ -340,7 +342,7 @@ header .innerBox .main-menu .item .item_contents .contents_menu > .inner > li h4
   color: #00b050;
 }
 header .innerBox .main-menu .item .item_contents .contents_menu > .inner > li ul li {
-  padding: 5px 0px;
+  padding: 2px 0px;
   cursor: pointer;
 }
 header .innerBox .main-menu .item .item_contents .contents_menu > .inner > li ul li:hover > a {
@@ -839,14 +841,44 @@ header .innerBox .bg1 {
   top: 35%;
   font-size: 0.75em;
 }
+@media screen and (max-width: 1024px) {
+  #container .starbucks_machine .machineBox .machine_innerBox .machine_box .machine_text1 {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container .starbucks_machine .machineBox .machine_innerBox .machine_box .machine_text1 {
+    font-size: 1em;
+  }
+}
 #container .starbucks_machine .machineBox .machine_innerBox .machine_box .machine_text2 {
   top: 40%;
   font-size: 0.9em;
+}
+@media screen and (max-width: 1024px) {
+  #container .starbucks_machine .machineBox .machine_innerBox .machine_box .machine_text2 {
+    top: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container .starbucks_machine .machineBox .machine_innerBox .machine_box .machine_text2 {
+    font-size: 1.25em;
+  }
 }
 #container .starbucks_machine .machineBox .machine_innerBox .machine_box .machine_text3 {
   top: 45%;
   font-size: 0.6em;
   -webkit-line-clamp: 2;
+}
+@media screen and (max-width: 1024px) {
+  #container .starbucks_machine .machineBox .machine_innerBox .machine_box .machine_text3 {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container .starbucks_machine .machineBox .machine_innerBox .machine_box .machine_text3 {
+    font-size: 0.8em;
+  }
 }
 #container .starBucks_bottom {
   max-width: 2000px;
@@ -854,6 +886,11 @@ header .innerBox .bg1 {
   margin-right: auto;
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  #container .starBucks_bottom {
+    text-align: center;
+  }
 }
 #container .starBucks_bottom .bottom_banner {
   display: -webkit-box;
@@ -906,7 +943,7 @@ header .innerBox .bg1 {
             transform: translateX(0%);
     -webkit-transform: translateY(-24%);
             transform: translateY(-24%);
-    height: 350px;
+    height: 275px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -922,7 +959,7 @@ header .innerBox .bg1 {
 }
 @media screen and (max-width: 1024px) {
   #container .starBucks_bottom .bottom_banner > div a img {
-    width: 100%;
+    width: 90%;
   }
 }
 #container .starBucks_bottom .bottom_banner > div .bottom_Box {
