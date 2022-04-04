@@ -78,11 +78,13 @@ body {
             color: #fff;
             width: 100%;
             display: flex;
-            padding: 0.75em	1em;
+            padding: 1em 1em 0.75em 1em;
             i {
                 position: relative;
-                left: 72%;
+                left: 70%;
                 cursor: pointer;
+                font-size: 1.25em;
+                margin-top: -0.2em;
                 &:hover {
                     opacity: .5;
                 }
@@ -124,6 +126,7 @@ body {
                         font-size: 0.75em;
                         padding: 1.05em	1em;
                         display: block;
+
                         &:hover {
                             background-color: #00b050;
                             -webkit-transition: all 0.6s ease;
@@ -144,7 +147,8 @@ body {
                             padding-right: 0.5em;
                             width: 9em;
                             display: inline;
-                            vertical-align: middle;
+                            vertical-align: -3px;
+
                         }
                         span {
 
@@ -331,7 +335,7 @@ header {
                                 }
                                 ul {
                                     li {
-                                        padding: 5px 0px;
+                                        padding: 2px 0px;
                                         cursor: pointer;
                                         &:hover>a {
                                             text-decoration: underline;
@@ -768,15 +772,33 @@ header {
                     .machine_text1 {
                         top: 35%;
                         font-size: 0.75em;
+                        @include respond($pc1024) {
+                            top: 40%;
+                        }
+                        @include respond($mobile480) {
+                            font-size: 1em;
+                        }
                     }
                     .machine_text2 {
                         top: 40%;
                         font-size: .9em;
+                        @include respond($pc1024) {
+                            top: 45%;
+                        }
+                        @include respond($mobile480) {
+                            font-size: 1.25em;
+                        }
                     }
                     .machine_text3 {
                         top: 45%;
                         font-size: 0.6em;
                         -webkit-line-clamp: 2;
+                        @include respond($pc1024) {
+                            top: 50%;
+                        }
+                        @include respond($mobile480) {
+                            font-size: 0.8em;
+                        }
                     }
                 }
             }
@@ -790,6 +812,9 @@ header {
         margin-right: auto;
         overflow: hidden;
         @include pos($p:relative);
+        @include respond($pc1024) {
+            text-align: center;
+        }
         .bottom_banner {
             display: flex;
             justify-content: space-between;
@@ -821,7 +846,7 @@ header {
                     @include respond($pc1024) {
                         transform: translateX(0%);
                         transform: translateY(-24%);
-                        height: 350px;
+                        height: 275px;
                     }
                     @include respond($mobile767) {
                         height: 100%;
@@ -830,7 +855,7 @@ header {
                     img {
                         transition: all 0.6s ease;
                         @include respond($pc1024) {
-                            width: 100%;
+                            width: 90%;
                         }
                     }
                 }
@@ -856,6 +881,7 @@ header {
         }
     }
 }
+
 /* footer */
 footer {
     background-color: $로그인컬러;
