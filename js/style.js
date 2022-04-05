@@ -47,6 +47,7 @@ $(function() {
         $(this).removeClass("bg");
     })
 
+    //모바일 화면 나오게 만들기
     $('.mobileheader>a>i').click(function(){
         $('body').toggleClass('menu-open');
     })
@@ -184,8 +185,22 @@ $(function() {
     $('.main_text3').fuwatto({duration: 6000})
     $('.main_text4').fuwatto({duration: 6000})
     $('#left-right').fuwatto({slide:'left-right'})
-    $('#left-right1').fuwatto({slide:'left-right'})
-    $('#left-right2').fuwatto({slide:'left-right'})
+    $('#left-right1').fuwatto({
+        duration: 2000,
+        adjustment: {
+            top: 0,
+            left: 0,
+        },
+        slide: 'right-left'
+    })
+    $('#left-right2').fuwatto({
+        duration: 3000,
+        adjustment: {
+            top: 0,
+            left: 0,
+        },
+        slide: 'right-left'
+    })
     $('#fade1').fuwatto({distance: 1000})
     $('#fade2').fuwatto({distance: 1000})
     $('#top-bottom1').fuwatto({
@@ -194,23 +209,23 @@ $(function() {
             top: 0,
             left: 0,
         },
-        slide: 'top-bottom'
+        slide: 'left-right'
     })
     $('#top-bottom2').fuwatto({
+        duration: 2000,
+        adjustment: {
+            top: 0,
+            left: 0,
+        },
+        slide: 'right-left'
+    })
+    $('#top-bottom3').fuwatto({
         duration: 3000,
         adjustment: {
             top: 0,
             left: 0,
         },
-        slide: 'top-bottom'
-    })
-    $('#top-bottom3').fuwatto({
-        duration: 4000,
-        adjustment: {
-            top: 0,
-            left: 0,
-        },
-        slide: 'top-bottom'})
+        slide: 'right-left'})
     $('.ma1').fuwatto({duration: 3000})
     $('.ma2').fuwatto({duration: 4000})
     $('.ma3').fuwatto({duration: 5000})

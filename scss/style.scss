@@ -187,7 +187,7 @@ body {
 header {
     @include pos($p:fixed);
     width: 100%;
-    padding: 10px 0;
+    padding-top: 10px;
     z-index: 100;
     transition: all 0.6s ease;
     &.sticky {
@@ -301,7 +301,7 @@ header {
                     display: block;
                 }
                 .item_name {
-                    padding: 30px 20px;
+                    padding: 30px 20px 35px;
                     font-size: 1.1em;
                     font-weight: 500;
                     &:hover {
@@ -382,7 +382,7 @@ header {
                 }
             }
             .headerIcon {
-                margin: auto 0;
+                margin-top: 22.5px;
                 a {
                     font-size: 1.75em;
                     padding-left: 5px;
@@ -436,6 +436,7 @@ header {
     margin: 0 auto;
     .innerBox {
         max-width: 2000px;
+        max-height: 925px;
         margin: 0 auto;
         .img {
             img {
@@ -687,19 +688,24 @@ header {
                             width: 100%;
                         }
                     }
-                    p {
-                        text-align: center;
-                        cursor: pointer;
-                        &:hover {
-                            color: $링크서브;
-                            text-decoration: underline;
+                    .menu_textBox {
+                        position: absolute;
+                        top: 92.5%;
+                        margin-left: 175px;
+                        p {
+                            text-align: center;
+                            cursor: pointer;
+                            &:hover {
+                                color: $링크서브;
+                                text-decoration: underline;
+                            }
                         }
-                    }
-                    .menuBox_text1 {
-                        padding-top: 20px;
-                    }
-                    .menuBox_text2 {
-                        padding-top: 5px;
+                        .menuBox_text1 {
+
+                        }
+                        .menuBox_text2 {
+                            padding-top: 20px;
+                        }
                     }
                 }
             }
@@ -812,13 +818,10 @@ header {
         margin-right: auto;
         overflow: hidden;
         @include pos($p:relative);
-        @include respond($pc1024) {
-            text-align: center;
-        }
         .bottom_banner {
             display: flex;
             justify-content: space-between;
-            @include respond($pc1024) {
+            @include respond($mobile767) {
                 display: block;
             }
             >div {
@@ -834,29 +837,22 @@ header {
                 &:hover>.bottom_Box>.bottom_text1 {
                     margin-top: -20px;
                 }
-                .secondImg {
-                    transform: translateX(-45%);
-                    @include respond($pc1024) {
-                        transform: translateX(0%);
-                    }
-                }
                 a {
                     display: block;
-                    transform: translateX(-60%);
-                    @include respond($pc1024) {
-                        transform: translateX(0%);
-                        transform: translateY(-24%);
-                        height: 275px;
-                    }
-                    @include respond($mobile767) {
-                        height: 100%;
-                        transform: translateY(0%);
-                    }
                     img {
                         transition: all 0.6s ease;
-                        @include respond($pc1024) {
-                            width: 90%;
-                        }
+                        width: 100%;
+                    }
+                }
+                .bottom_first {
+                    @include respond($mobile767) {
+                        display: none;
+                    }
+                }
+                .bottom_third {
+                    display: none;
+                    @include respond($mobile767) {
+                        display: block;
                     }
                 }
                 .bottom_Box {
